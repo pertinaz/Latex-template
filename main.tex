@@ -1,0 +1,189 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[spanish]{babel} %Castellanización
+\usepackage[T1]{fontenc} %escribe lo del teclado
+\usepackage[utf8]{inputenc} %Reconoce algunos símbolos
+\usepackage{lmodern} %optimiza algunas fuentes
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref} % Uso de links
+\usepackage[most]{tcolorbox}
+\usepackage{listings}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Pregunta]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newenvironment{solution}{\begin{proof}[Solución]}{\end{proof}} %It just adds Proof in italics at the beginning of the text given as argument and a white square (Q.E.D. symbol, also known as a tombstone) at the end of it.
+\renewcommand{\qedsymbol}{} % To hide the Q.E.D. symbol altogether, redefine it to be blank:
+
+
+
+
+
+
+%--------------------PARAMETRIZA APARIENCIA DE CODIGO FUENTE ------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=true,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+%------------------------------------------------------------------------------------------------
+ 
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{TITULO DEL TRABAJO A ENTREGAR}
+\author{Juan Manuel Agudelo Aguirre\\ %replace with your name
+Docente: Cesar Manuel Castillo Rodriguez\\
+Universidad Tecnológica de Pereira}
+\date{06 de Agosto de 2024}
+
+\maketitle
+
+
+
+\begin{center}
+\section*{subtitulos \textit{cursivas} y \textit{cursivas}}    
+\end{center}
+
+ 
+\begin{question}{1}
+primera pregunta\\
+
+Su programa debe mostrar un mensaje de error apropiado si el primer valor ingresado por el usuario es 0.
+
+
+\begin{tcolorbox}
+caja de texto.
+\end{tcolorbox}
+
+\end{question}
+
+\begin{lstlisting}[language=Python]
+modifique aqui su codigo
+\end{lstlisting}
+%-------------------------------------------------------------
+\begin{question}{9}
+Modifica tablas
+\begin{center}
+    \begin{tabular}{|c|c|}
+    \hline
+         \textbf{Producto} & \textbf{Precio} \\
+        \hline
+         Brocha & 500  \\
+         \hline
+         Espatula & 2000 \\
+         \hline
+         Pala & 54000 \\
+         \hline
+         Carretilla & 300000 \\
+         \hline
+         Casco & 55000 \\
+         \hline
+         Soldador & 230000 \\
+         \hline
+         Alicate & 10000 \\
+         \hline
+         Destornillador & 3000 \\
+         \hline
+         Maza & 60000 \\
+         \hline
+         Nivel & 24000 \\
+         \hline
+         Flexometro & 76000 \\
+         \hline
+         Hacha & 32000 \\
+         \hline
+         Pico & 74000 \\
+         \hline
+         Rastrillos & 56000\\
+         \hline
+         
+    \end{tabular}
+\end{center}
+\end{question}
+
+
+\begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+         \textbf{Banda} & \textbf{Miembros} \\
+        \hline
+         Queen & Freddie Mercury, Brian May, Roger Taylor y John Deacon  \\
+         \hline
+         The Doors & Jim Morrison, Robby Krieger, Ray Manzarek y John Densmore \\
+         \hline
+         Green Day & Billie Joe Armstrong, Mike Dirnt  y Tré Cool  \\
+         \hline
+         Rolling Stones & Mick Jagger, Keith Richards, Charlie Watts y Ron Wood  \\
+         \hline
+         Led zeppelin & Robert Plant, Jimmy Page,  John Paul Jones y John Bonham.  \\
+         \hline
+         Black Sabbath & Ozzy Osbourne, Tony Iommi, Bill Ward y Geezer Butler \\
+         \hline
+         Soundgarden & Chris Cornell, Kim Thayil, Matt Cameron y Ben Shepherd. \\
+         \hline
+         Alice in Chains &  Layne Staley, Jerry Cantrell, Sean Kinney y Mike Starr \\
+         \hline
+         
+    \end{tabular}
+\end{center}
+
+Modifique sus listas
+
+\begin{itemize}
+\item primer elemento de la lista
+\item segundo elemento de la lista
+\end{itemize}
+\end{document}
